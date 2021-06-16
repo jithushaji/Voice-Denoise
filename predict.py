@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--audio_dir_prediction', default='test/', type=str)
 parser.add_argument('--dir_save_prediction', default='predictions/', type=str)
-parser.add_argument('--audio_input_prediction', default=['noise1.wav'], type=list)
+parser.add_argument('--audio_input_prediction', default=['noise2.wav'], type=list)
 parser.add_argument('--audio_output_prediction', default='denoise.wav', type=str)
 parser.add_argument('--sample_rate', default=8000, type=int)
 parser.add_argument('--min_duration', default=1.0, type=float)
