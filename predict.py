@@ -12,7 +12,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--audio_dir_prediction', default='test/', type=str)
 parser.add_argument('--dir_save_prediction', default='predictions/', type=str)
-parser.add_argument('--audio_input_prediction', default=['noisy_voice.wav'], type=list)
+parser.add_argument('--audio_input_prediction', default=['noise1.wav'], type=list)
 parser.add_argument('--audio_output_prediction', default='denoise.wav', type=str)
 parser.add_argument('--sample_rate', default=8000, type=int)
 parser.add_argument('--min_duration', default=1.0, type=float)
@@ -26,12 +26,12 @@ args = vars(parser.parse_args())
 
 
 # load json and create model
-json_file = open('model_unet.json', 'r')
+json_file = open('model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 loaded_model = model_from_json(loaded_model_json)
 # load weights into new model
-loaded_model.load_weights('model_unet.h5')
+loaded_model.load_weights('model.h5')
 print("Loaded model from disk")
 
 # Extracting noise and voice from folder and convert to numpy
