@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>resources/recording.png</file>
+    <file>resources/voice-message.png</file>
+    <file>resources/voice-search.png</file>
+  </qresource>
+</RCC>

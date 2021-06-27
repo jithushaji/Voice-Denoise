@@ -1,8 +1,7 @@
 import warnings
 import os
-import librosa
+
 import soundfile as sf
-import tensorflow as tf
 from tensorflow.keras.models import model_from_json
 from utils import scaled_in, inv_scaled_ou
 from utils import audio_files_to_numpy, numpy_audio_to_matrix_spectrogram, matrix_spectrogram_to_numpy_audio
