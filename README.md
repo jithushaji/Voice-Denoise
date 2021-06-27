@@ -1,10 +1,12 @@
 # Voice-Denoise
 
-run python3 UI.py
+run:
+ python3 UI.py
 
 if pyaudio shows any installation errors do:
 
-sudo apt get install portaudio19-dev python-all dev python3-all-dev
+ sudo apt get install portaudio19-dev python-all dev python3-all-dev
 
+then do:
 
-pip install pyaudio
+ pip install pyaudio
