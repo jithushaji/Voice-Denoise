@@ -1,0 +1,2 @@
+"python" "UI.py"
+pause

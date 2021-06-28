@@ -11,6 +11,8 @@ from PyQt5.uic import loadUi
 
 from main_ui import Ui_MainWindow
 
+from playsound import playsound
+
 
 class Window(QMainWindow, Ui_MainWindow):
 
@@ -29,9 +31,6 @@ class Window(QMainWindow, Ui_MainWindow):
         
         self.pushButton_2.clicked.connect(self.de_noise)
         
-        
-        
-    
     
     
     def rec(self):
@@ -44,10 +43,11 @@ class Window(QMainWindow, Ui_MainWindow):
         
     def de_noise(self):
         
-        import sound
+        import denoise
         
-
-
+        denoise.noise()
+        
+        playsound('predictions/demo.wav')
 
 
 
