@@ -2,7 +2,7 @@ import speech_recognition as sr
 from sys import byteorder
 from array import array
 from struct import pack
-
+import shutil
 import pyaudio
 import wave
 
@@ -116,9 +116,10 @@ def record_to_file(path):
     wf.writeframes(data)
     wf.close()
 
-if __name__ == '__main__':
-    print("please speak a word into the microphone")
-    record_to_file('demo.wav')
-    print("done - result written to demo.wav")
+# if __name__ == '__main__':
+#     print("please speak a word into the microphone")
+#     record_to_file('demo.wav')
+#     print("done - result written to demo.wav")
+#     shutil.move("demo.wav", "/sound/demo.wav")
     #r = sr.Recognizer()
     #print("You said " + r.recognize_google("demo.wav"))

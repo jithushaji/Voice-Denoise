@@ -38,7 +38,7 @@ class Window(QMainWindow, Ui_MainWindow):
         
         import record_audio
         
-        record_audio.record_to_file('demo.wav')
+        record_audio.record_to_file('sound/demo.wav')
         
         
         

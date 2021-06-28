@@ -9,7 +9,7 @@ import argparse
 warnings.filterwarnings('ignore')
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--audio_dir_prediction', default='test/', type=str)
+parser.add_argument('--audio_dir_prediction', default='sound/', type=str)
 parser.add_argument('--dir_save_prediction', default='predictions/', type=str)
 parser.add_argument('--audio_input_prediction', default=['noise2.wav'], type=list)
 parser.add_argument('--audio_output_prediction', default='denoise.wav', type=str)
