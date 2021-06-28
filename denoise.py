@@ -10,6 +10,8 @@ warnings.filterwarnings('ignore')
 
 def noise():
     
+    if os.path.exists('predictions')==False:
+        os.mkdir('predictions')
     parser = argparse.ArgumentParser()
     parser.add_argument('--audio_dir_prediction', default='sound/', type=str)
     parser.add_argument('--dir_save_prediction', default='predictions/', type=str)

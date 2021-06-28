@@ -5,6 +5,8 @@ from struct import pack
 import shutil
 import pyaudio
 import wave
+import os
+
 
 THRESHOLD = 500
 CHUNK_SIZE = 1024
@@ -67,6 +69,9 @@ def record():
     blank sound to make sure VLC et al can play 
     it without getting chopped off.
     """
+    if os.path.exists('sound')==False:
+        os.mkdir('sound')
+    
     p = pyaudio.PyAudio()
     stream = p.open(format=FORMAT, channels=1, rate=RATE,
         input=True, output=True,

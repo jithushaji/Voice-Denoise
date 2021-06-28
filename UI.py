@@ -1,5 +1,5 @@
 import sys
- 
+import os 
 
 from PyQt5.QtWidgets import (
 
@@ -47,7 +47,11 @@ class Window(QMainWindow, Ui_MainWindow):
         
         denoise.noise()
         
-        playsound('predictions/demo.wav')
+        file='predictions/demo.wav'
+        
+        if os.path.exists(file)==True:
+            
+            playsound('predictions/demo.wav')
 
 
 
