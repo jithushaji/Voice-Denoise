@@ -77,3 +77,6 @@ def noise():
         denoise_long = audio_denoise_recons.reshape(1, nb_samples * (args['frame_length']))*10
         sf.write(args['dir_save_prediction'] + noise, denoise_long[0, :], args['sample_rate'])
 
+
+#noise()
+
