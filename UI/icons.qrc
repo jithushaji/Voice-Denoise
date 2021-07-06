@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>resources/sign_lang.png</file>
+    <file>resources/translation.png</file>
     <file>resources/recording.png</file>
     <file>resources/voice-message.png</file>
     <file>resources/voice-search.png</file>

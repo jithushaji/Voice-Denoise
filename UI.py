@@ -31,6 +31,10 @@ class Window(QMainWindow, Ui_MainWindow):
         
         self.pushButton_2.clicked.connect(self.de_noise)
         
+        self.pushButton_3.clicked.connect(self.tex)
+        
+        self.pushButton_4.clicked.connect(self.signlang)
+        
     
     
     def rec(self):
@@ -38,7 +42,21 @@ class Window(QMainWindow, Ui_MainWindow):
         import record_audio
         
         record_audio.record_to_file('sound/demo.wav')
+    
+    
+    def tex(self):
         
+        import voice_to_text
+        
+        voice_to_text.read()
+        
+    
+    def signlang(self):
+        
+        import sign_lang
+        
+        sign_lang.recognize()
+    
         
         
     def de_noise(self):

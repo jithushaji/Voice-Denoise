@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>256</width>
-    <height>100</height>
+    <width>264</width>
+    <height>163</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -69,6 +69,70 @@
      <size>
       <width>40</width>
       <height>40</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Record</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/newPrefix/resources/translation.png</normaloff>:/newPrefix/resources/translation.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>90</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Record</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/newPrefix/resources/sign_lang.png</normaloff>:/newPrefix/resources/sign_lang.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
      </size>
     </property>
     <property name="autoDefault">
